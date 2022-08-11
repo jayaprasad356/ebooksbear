@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#D9D9D9"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/brown_border">
+
+        <TextView
+            android:id="@+id/readeverythingtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read Everything everywhere"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/withbooksbeartxt"
+            android:layout_below="@id/readeverythingtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="with BookBear Pass"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="117dp"
+            android:layout_marginTop="2dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yellowpassicn"
+            android:layout_below="@+id/readeverythingtxt"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="92dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read for Free"
+            android:textStyle="bold"
+            android:textColor="#330303"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/white_corenredborder"
+            android:padding="18dp"
+            android:layout_marginTop="4dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalscrlview1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="75dp">
+
+        <LinearLayout
+            android:id="@+id/lltabscrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/brown_corneredborder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Novels"
+                    android:textColor="#330303"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/brown_corneredborder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Educational"
+                    android:textColor="#330303"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/brown_corneredborder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Novels"
+                    android:textColor="#330303"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/brown_corneredborder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Educational"
+                    android:textColor="#330303"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/brown_corneredborder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Novels"
+                    android:textColor="#330303"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalscrlview2"
+        android:layout_below="@+id/horizontalscrlview1"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plantpot"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/laptop"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plantpot"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/laptop"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plantpot"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/laptop"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue reading"
+        android:layout_marginTop="355dp"
+        android:layout_marginLeft="7dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See all"
+        android:layout_marginTop="358dp"
+        android:layout_marginRight="7dp"
+        android:textStyle="bold"
+        android:textColor="#330303"
+        android:layout_gravity="end"
+        android:textSize="18dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whitecornered2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/ikigaibookicn" />
+                <LinearLayout
+                    android:id="@+id/ikigaiimg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IKIGAI - The Japanese Secret.."
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="H. Garcia &amp; F. Miralles"
+                        android:textAlignment="viewEnd"/>
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:trackColor="#D9D9D9"
+                        app:trackThickness="5dp"
+                        app:trackCornerRadius="10dp"
+                        android:max="100"
+                        android:progress="21"
+                        app:indicatorColor="#330303"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="21%"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Page 21/100"
+                            android:textAlignment="viewEnd"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/whitecornered2">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ikigaibookicn"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+                <LinearLayout
+                    android:id="@+id/ikigaiimg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IKIGAI - The Japanese Secret.."
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="H. Garcia &amp; F. Miralles"
+                        android:textAlignment="viewEnd"/>
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:trackColor="#D9D9D9"
+                        app:trackThickness="5dp"
+                        app:trackCornerRadius="10dp"
+                        android:max="100"
+                        android:progress="21"
+                        app:indicatorColor="#330303"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="21%"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Page 21/100"
+                            android:textAlignment="viewEnd"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/whitecornered2">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ikigaibookicn"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"/>
+                <LinearLayout
+                    android:id="@+id/ikigaiimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IKIGAI - The Japanese Secret.."
+                        android:textAlignment="viewEnd"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="H. Garcia &amp; F. Miralles"
+                        android:textAlignment="viewEnd"/>
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:trackColor="#D9D9D9"
+                        app:trackThickness="5dp"
+                        app:trackCornerRadius="10dp"
+                        android:max="100"
+                        android:progress="21"
+                        app:indicatorColor="#330303"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="21%"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Page 21/100"
+                            android:textAlignment="viewEnd"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Authors"
+        android:layout_marginTop="530dp"
+        android:layout_marginLeft="7dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See all"
+        android:layout_marginTop="530dp"
+        android:layout_marginRight="7dp"
+        android:textStyle="bold"
+        android:textColor="#330303"
+        android:layout_gravity="end"
+        android:textSize="18dp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalscrlview4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="565dp">
+
+        <LinearLayout
+            android:id="@+id/lltabscrollviewauthors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgrowling"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/rowling" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="J.K Rowling"
+                    android:textColor="#330303"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgchetan"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/chetan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Chetan B."
+                    android:textColor="#330303"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgroald"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/roald" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Roald Dahi"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgcharles"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/charlesdickens" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Charles Di.."
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgA"
+                    android:layout_width="75dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/chetan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="A.."
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+
+
+
+
+
+</FrameLayout>

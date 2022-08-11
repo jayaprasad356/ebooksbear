@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/homeicn"/>
+    <item android:title="Rack"
+        android:id="@+id/rack"
+        android:icon="@drawable/booksicn"/>
+    <item android:title="Books"
+        android:id="@+id/books"
+        android:icon="@drawable/heartbookicn"/>
+    <item android:title="Human"
+        android:id="@+id/human"
+        android:icon="@drawable/humanicn"/>
+</menu>
